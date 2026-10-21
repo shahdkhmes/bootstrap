@@ -1,0 +1,72 @@
+/* ===== الخط العام للموقع ===== */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --blue: #2132f0;    
+  --pink: #d6218f;      
+}
+
+/* ===== اللوجو والزرار الأزرق ===== */
+.text-primary {
+  color: var(--blue) !important;
+}
+.btn-primary {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+.btn-primary:hover {
+  background-color: #1a27c4;
+  border-color: #1a27c4;
+}
+
+/* ===== خلفية متدرجة (للبادج) ===== */
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, var(--blue), var(--pink));
+}
+
+/* ===== نص متدرج (العنوان الكبير و About Me) ===== */
+.text-gradient {
+  background: linear-gradient(45deg, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== أيقونات السوشيال: نفس التدرج ===== */
+.social-icon {
+  text-decoration: none;
+}
+.social-icon i {
+  background: linear-gradient(45deg, var(--blue), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== الشكل المتدرج اللي ورا الصورة ===== */
+.hero-shape {
+  background: linear-gradient(45deg, var(--blue), var(--pink));
+  border-radius: 12rem 12rem 0 0; /* حواف دايرية من فوق بس */
+  height: 22rem;
+  overflow: hidden;
+}
+
+/* ===== صورة الشخص جوا الشكل ===== */
+.hero-img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+
+/* ===== على الموبايل:== */
+@media (max-width: 576px) {
+  .hero-shape {
+    height: 16rem;
+    border-radius: 8rem 8rem 0 0;
+  }
+}
